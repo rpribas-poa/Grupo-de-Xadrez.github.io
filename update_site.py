@@ -48,7 +48,7 @@ def toStrResult(cod):
     return ''
 
 def toStrRound(r):
-    return '\n'.join([f'{getName(g[0][0])} vs {getName(g[0][1])} – {toStrResult(g[1])}' for g in r])
+    return '\n'.join([f'* {getName(g[0][0])} vs {getName(g[0][1])} = {toStrResult(g[1])}' for g in r])
 
 def toStrStandings():
     points = {key: 0 for key in names.keys()}
