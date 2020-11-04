@@ -1,29 +1,29 @@
 ## Rodada atual:
-H vs I = 
-L vs E = 
-J vs G = 
-B vs C = 
-K vs F = 
-A vs D = 
+L vs E – 
+A vs D – 
+H vs I – 
+B vs C – 
+J vs G – 
+K vs F – 
 
 ## Rodada anterior:
-C vs A = 
-F vs J = 
-E vs L = 
-D vs L = 
-B vs H = 
-I vs G = 
+F vs J – 
+D vs L – 
+C vs A – 
+B vs H – 
+I vs G – 
+E vs L – 
 
 ## Rodada seguinte:
-H vs I = 
-L vs E = 
-J vs G = 
-B vs C = 
-K vs F = 
-A vs D = 
+L vs E – 
+A vs D – 
+H vs I – 
+B vs C – 
+J vs G – 
+K vs F – 
 
 # Tabela
- # | Nome | Pts T | Pts P | J P | J T 
+ \# | Nome | Pts T | Pts P | J P | J T 
 ---|------|-------|-------|-----|-----
  1 | A | 0 | 0 | 0 | 0 
  1 | B | 0 | 0 | 0 | 0 
@@ -40,26 +40,26 @@ A vs D =
 
 # Resultados
 ## Rodada 1:
-K vs D = 
-I vs F = 
-L vs C = 
-J vs E = 
-A vs B = 
-G vs H = 
+K vs D – 
+I vs F – 
+G vs H – 
+L vs C – 
+A vs B – 
+J vs E – 
 
 ## Rodada 2:
-C vs A = 
-F vs J = 
-E vs L = 
-D vs L = 
-B vs H = 
-I vs G = 
+F vs J – 
+D vs L – 
+C vs A – 
+B vs H – 
+I vs G – 
+E vs L – 
 
 ## Rodada 3:
-H vs I = 
-L vs E = 
-J vs G = 
-B vs C = 
-K vs F = 
-A vs D = 
+L vs E – 
+A vs D – 
+H vs I – 
+B vs C – 
+J vs G – 
+K vs F – 
 
