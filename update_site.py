@@ -120,6 +120,7 @@ if nextRound != None:
 
 page += '## Tabela'
 page += '\n'
+page += '\n'
 page += toStrStandings()
 page += '\n'
 page += '\n'
