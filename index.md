@@ -1,3 +1,8 @@
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
+
 # Torneio de Xadrez
 ### Rodada atual:
 * G vs H = 
@@ -30,6 +35,7 @@
 | 1 | J | 0 | 0 | 0 | 0 |
 | 1 | K | 0 | 0 | 0 | 0 |
 | 1 | L | 0 | 0 | 0 | 0 |
+{: .tablelines}
 
 ## Resultados
 ### Rodada 1:
