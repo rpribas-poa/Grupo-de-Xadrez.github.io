@@ -24,7 +24,7 @@ r:
 C,A=
 B,H=
 D,L=
-E,L=
+E,K=
 F,J=
 I,G=
 

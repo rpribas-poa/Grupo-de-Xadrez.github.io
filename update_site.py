@@ -8,7 +8,7 @@ for line in data:
     if line.endswith(':'):
         analysing = line[:-1]
         if analysing == 'r':
-            rounds.append(set())
+            rounds.append(list())
         continue
     if analysing == 'n':
         if '=' in line:
@@ -16,7 +16,7 @@ for line in data:
         continue
     if analysing == 'r':
         if '=' in line:
-            rounds[-1].add(((line.split('=')[0].split(',')[0], line.split('=')[0].split(',')[1]), line.split('=')[1]))
+            rounds[-1].append(((line.split('=')[0].split(',')[0], line.split('=')[0].split(',')[1]), line.split('=')[1]))
 
 lastRound = None
 currentRound = None
