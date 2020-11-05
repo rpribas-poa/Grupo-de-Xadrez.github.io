@@ -29,8 +29,8 @@ for i, r in enumerate(rounds):
             lastRound = i-1
         if i < len(rounds) - 1:
             nextRound = i+1
-
-if currentRound == None:
+        break
+else:
     lastRound = len(rounds) - 1
 
 def getName(cod):
