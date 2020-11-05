@@ -17,7 +17,7 @@
 
 ## Tabela
 
-| \# | Nome | Pts T | Pts P | J P | J T |
+| Pos | Nome | Pts | J | J P | V |
 | --- | --- | --- | --- | --- | --- |
 | 1 | A | 0 | 0 | 0 | 0 |
 | 1 | B | 0 | 0 | 0 | 0 |

@@ -51,44 +51,43 @@ def toStrRound(r):
     return '\n'.join([f'* {getName(g[0][0])} vs {getName(g[0][1])} = {toStrResult(g[1])}' for g in r])
 
 def toStrStandings():
-    points = {key: 0 for key in names.keys()}
-    pointsAsBlack = {key: 0 for key in names.keys()}
-    gamesAsBlack = {key: 0 for key in names.keys()}
-    games = {key: 0 for key in names.keys()}
+    points = {player: 0 for player in names.keys()}
+    games = {player: 0 for player in names.keys()}
+    gamesAsBlack = {player: 0 for player in names.keys()}
+    wins = {player: 0 for player in names.keys()}
 
     for r in rounds:
         for g in r:
             if g[1] == 'w':
                 points[g[0][0]] += 1
+                wins[g[0][0]] += 1
             elif g[1] == 'd':
                 points[g[0][0]] += 0.5
                 points[g[0][1]] += 0.5
-                pointsAsBlack[g[0][1]] += 0.5
             elif g[1] == 'b':
                 points[g[0][1]] += 1
-                pointsAsBlack[g[0][1]] += 1
             else:
                 continue
             games[g[0][0]] += 1
             games[g[0][1]] += 1
             gamesAsBlack[g[0][1]] += 1
 
-    table = sorted([(key,points[key],pointsAsBlack[key],gamesAsBlack[key],games[key]) for key in names.keys()], key = lambda player: (player[1], player[2], -player[3], -player[4]), reverse=True)
+    table = list(map(lambda player: (getName(player), points[player], games[player], gamesAsBlack[player], wins[player]), sorted(names.keys(), key = lambda player: (points[player], -games[player], -gamesAsBlack[player], wins[player]), reverse=True)))
 
     tableStr = ''
 
-    tableStr += '| \\# | Nome | Pts T | Pts P | J P | J T |'
+    tableStr += '| Pos | Nome | Pts | J | J P | V |'
     tableStr += '\n'
     tableStr += '| --- | --- | --- | --- | --- | --- |'
 
     lastI = None
     for i, entry in enumerate(table):
         tableStr += '\n'
-        if i == 0 or entry[1:] != table[i-1][1:]:
-            tableStr += f'| {i+1} | {entry[0]} | {entry[1]} | {entry[2]} | {entry[3]} | {entry[4]} |'
+        if i == 0 or entry[1:] != table[i - 1][1:]:
+            tableStr += f'| {i + 1} | {" | ".join(map(str, entry))} |'
             lastI = i
         else:
-            tableStr += f'| {lastI+1} | {entry[0]} | {entry[1]} | {entry[2]} | {entry[3]} | {entry[4]} |'
+            tableStr += f'| {lastI + 1} | {" | ".join(map(str, entry))} |'
 
     return tableStr
 
