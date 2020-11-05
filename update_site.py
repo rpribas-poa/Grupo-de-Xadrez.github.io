@@ -77,9 +77,9 @@ def toStrStandings():
 
     tableStr = ''
 
-    tableStr += ' \# | Nome | Pts T | Pts P | J P | J T '
+    tableStr += ' \\# | Nome | Pts T | Pts P | J P | J T '
     tableStr += '\n'
-    tableStr += '---|------|-------|-------|-----|-----'
+    tableStr += '----|------|-------|-------|-----|-----'
 
     lastI = None
     for i, entry in enumerate(table):
@@ -94,15 +94,18 @@ def toStrStandings():
 
 page = ''
 
+page += '# Torneio de Xadrez'
+page += '\n'
+
 if currentRound != None:
-    page += '## Rodada atual:'
+    page += '### Rodada atual:'
     page += '\n'
     page += toStrRound(rounds[currentRound])
     page += '\n'
     page += '\n'
 
 if lastRound != None:
-    page += '## Rodada anterior:'
+    page += '### Rodada anterior:'
     page += '\n'
     page += toStrRound(rounds[lastRound])
     page += '\n'
@@ -115,17 +118,17 @@ if nextRound != None:
     page += '\n'
     page += '\n'
 
-page += '# Tabela'
+page += '## Tabela'
 page += '\n'
 page += toStrStandings()
 page += '\n'
 page += '\n'
 
-page += '# Resultados'
+page += '## Resultados'
 page += '\n'
 
 for i, r in enumerate(rounds):
-    page += f'## Rodada {i + 1}:'
+    page += f'### Rodada {i + 1}:'
     page += '\n'
     page += toStrRound(r)
     page += '\n'
