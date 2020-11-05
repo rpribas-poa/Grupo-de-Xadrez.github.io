@@ -77,18 +77,18 @@ def toStrStandings():
 
     tableStr = ''
 
-    tableStr += ' Pos | Nome | Pts T | Pts P | J P | J T '
+    tableStr += '| \\# | Nome | Pts T | Pts P | J P | J T |'
     tableStr += '\n'
-    tableStr += '-----|------|-------|-------|-----|-----'
+    tableStr += '|----|------|-------|-------|-----|-----|'
 
     lastI = None
     for i, entry in enumerate(table):
         tableStr += '\n'
         if i == 0 or entry[1:] != table[i-1][1:]:
-            tableStr += f' {i+1} | {entry[0]} | {entry[1]} | {entry[2]} | {entry[3]} | {entry[4]} '
+            tableStr += f'| {i+1} | {entry[0]} | {entry[1]} | {entry[2]} | {entry[3]} | {entry[4]} |'
             lastI = i
         else:
-            tableStr += f' {lastI+1} | {entry[0]} | {entry[1]} | {entry[2]} | {entry[3]} | {entry[4]} '
+            tableStr += f'| {lastI+1} | {entry[0]} | {entry[1]} | {entry[2]} | {entry[3]} | {entry[4]} |'
 
     return tableStr
 
