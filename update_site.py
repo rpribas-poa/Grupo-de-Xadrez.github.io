@@ -77,9 +77,9 @@ def toStrStandings():
 
     tableStr = ''
 
-    tableStr += ' \\# | Nome | Pts T | Pts P | J P | J T '
+    tableStr += ' Pos | Nome | Pts T | Pts P | J P | J T '
     tableStr += '\n'
-    tableStr += '----|------|-------|-------|-----|-----'
+    tableStr += '-----|------|-------|-------|-----|-----'
 
     lastI = None
     for i, entry in enumerate(table):

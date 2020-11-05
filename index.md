@@ -1,23 +1,23 @@
 # Torneio de Xadrez
 ### Rodada atual:
+* L vs C = 
 * I vs F = 
 * A vs B = 
-* G vs H = 
 * J vs E = 
 * K vs D = 
-* L vs C = 
+* G vs H = 
 
 ## Rodada seguinte:
-* I vs G = 
-* E vs L = 
 * F vs J = 
-* C vs A = 
-* D vs L = 
+* E vs L = 
 * B vs H = 
+* D vs L = 
+* I vs G = 
+* C vs A = 
 
 ## Tabela
- \# | Nome | Pts T | Pts P | J P | J T 
-----|------|-------|-------|-----|-----
+ Pos | Nome | Pts T | Pts P | J P | J T 
+-----|------|-------|-------|-----|-----
  1 | A | 0 | 0 | 0 | 0 
  1 | B | 0 | 0 | 0 | 0 
  1 | C | 0 | 0 | 0 | 0 
@@ -33,26 +33,26 @@
 
 ## Resultados
 ### Rodada 1:
+* L vs C = 
 * I vs F = 
 * A vs B = 
-* G vs H = 
 * J vs E = 
 * K vs D = 
-* L vs C = 
+* G vs H = 
 
 ### Rodada 2:
-* I vs G = 
-* E vs L = 
 * F vs J = 
-* C vs A = 
-* D vs L = 
+* E vs L = 
 * B vs H = 
+* D vs L = 
+* I vs G = 
+* C vs A = 
 
 ### Rodada 3:
 * K vs F = 
-* A vs D = 
+* B vs C = 
 * J vs G = 
 * H vs I = 
 * L vs E = 
-* B vs C = 
+* A vs D = 
 
