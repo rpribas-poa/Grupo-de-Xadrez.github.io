@@ -112,7 +112,7 @@ if lastRound != None:
     page += '\n'
 
 if nextRound != None:
-    page += '## Rodada seguinte:'
+    page += '### Rodada seguinte:'
     page += '\n'
     page += toStrRound(rounds[nextRound])
     page += '\n'
